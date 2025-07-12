@@ -1,0 +1,178 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Bitcount Grid Double", system-ui;
+}
+
+
+@font-face {
+  font-family: "Bitcount Grid Double";
+  src: url('./fonts/BitcountGridDouble.woff2') format('woff2'),
+       url('./fonts/BitcountGridDouble.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.bitcount-grid-double {
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+/* HEADER SECTION */
+.header {
+  background-image: url('./Images/cute-astronaut-7680x7680-17102.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* ABOUT SECTION */
+.about {
+  background-image: url('./Images/About\ me.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 100vw;
+  color: white;
+  min-height: 500px;
+  text-align: center;
+  padding: 60px 20px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* SKILLS SECTION */
+.skills {
+    background-image: url('./Images/Skills\ section\ .png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    color: white;
+    min-height: 500px;
+    text-align: center;
+    padding: 60px 20px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0 0 0;
+    list-style-type: none;
+}
+
+.skills-list li {
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 5px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+
+/* CONTACT SECTION */
+.contact {
+  background-image: url('./Images/contact\ me\ .png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   min-width: 100vw;
+  color: white;
+  min-height: 500px;
+  text-align: center;
+  padding: 60px 20px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* AVATAR IMAGE */
+.avatar {
+  display: block;
+  margin: 0 auto 20px auto;
+  border-radius: 50%;
+}
+
+/* TYPOGRAPHY */
+h2 {
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.2); 
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+/* SCROLL SECTION */
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+/* BUTTON SECTION */
+button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+button a {
+  text-decoration: none;
+  color: inherit;
+}
